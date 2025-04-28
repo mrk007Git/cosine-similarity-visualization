@@ -56,3 +56,26 @@ You can customize the biomedical phrases and the embedding model by editing the 
 
 ## License
 This project is provided for academic demonstration purposes under the MIT License.
+
+## Example Output
+
+### Cosine Similarity 2D Vectors
+![Cosine Similarity 2D - heart attack origin](https://github.com/user-attachments/assets/4579c421-39e6-425e-b6ce-469720832ad6)
+
+**Cosine similarity vectors plotted in 2D semantic space, using "heart attack" as the origin. Smaller angles between vectors indicate closer semantic similarity.**
+
+### Cosine Similarity Heatmap
+![Cosine Similarity Heatmap](https://github.com/user-attachments/assets/3da8ab7f-4c29-4e43-aa0c-b166e5b69739)
+
+**Heatmap of pairwise cosine similarity scores between biomedical phrases, showing stronger semantic relationships with warmer colors.**
+
+### 3D PCA Projection
+![3d pca project of biomedial phrase embeddings](https://github.com/user-attachments/assets/1f41063c-2620-4933-a60e-eb1ca982fa29)
+
+**3D visualization of biomedical phrase embeddings projected onto the first three principal components using PCA, preserving dominant semantic patterns.**
+
+### PCA Variance Explained
+![PCA Variance](https://github.com/user-attachments/assets/9f3b2b5d-a053-46bb-baed-d18c12111a92)
+
+**Plot of variance explained by each principal component after dimensionality reduction, highlighting how much semantic information is retained.**
+
