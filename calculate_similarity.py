@@ -1,20 +1,16 @@
 from sentence_transformers import SentenceTransformer, util
 import seaborn as sns
 import matplotlib.pyplot as plt
+from config import BIOMEDICAL_PHRASES, MODEL_NAME
 
 # Notify user
 print("🔄 Loading the language model... (this may take up to a few minutes on first run, depending on your internet speed and machine configuration)\nPlease be patient.\n", flush = True)
 
 # Load model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer(MODEL_NAME)
 
 # Define phrases
-phrases = [
-    "heart attack",
-    "myocardial infarction",
-    "stroke",
-    "cerebrovascular accident"
-]
+phrases = BIOMEDICAL_PHRASES
 
 # Generate embeddings
 embeddings = model.encode(phrases, convert_to_tensor=True)

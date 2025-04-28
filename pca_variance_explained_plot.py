@@ -1,18 +1,14 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
+from config import BIOMEDICAL_PHRASES, MODEL_NAME
 
 # Load model
 print("🔄 Loading the language model... (please be patient)", flush=True)
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer(MODEL_NAME)
 
 # Define phrases
-phrases = [
-    "heart attack",
-    "myocardial infarction",
-    "stroke",
-    "cerebrovascular accident"
-]
+phrases = BIOMEDICAL_PHRASES
 
 # Generate embeddings
 embeddings = model.encode(phrases)
